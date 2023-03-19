@@ -1,4 +1,5 @@
 baseURL = "https://thevisible.net/"
 languageCode = "en-us"
 title = "The Visible Net"
+featured_image = '/images/visible-bulb.jpg'
 theme = 'ananke'
