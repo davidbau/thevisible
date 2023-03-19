@@ -20,14 +20,5 @@
       <description>Welcome to The Visible Net, a community devoted to understanding the mechanisms underlying the emergence of machine intelligence within modern large-scale deep neural networks.</description>
     </item>
     
-    <item>
-      <title>Older</title>
-      <link>https://thevisible.net/posts/older/</link>
-      <pubDate>Thu, 19 Jan 2023 15:54:00 -0400</pubDate>
-      
-      <guid>https://thevisible.net/posts/older/</guid>
-      <description>Testing an older post.</description>
-    </item>
-    
   </channel>
 </rss>
