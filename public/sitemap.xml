@@ -3,15 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://thevisible.net/posts/</loc>
+    <lastmod>2023-03-19T15:54:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thevisible.net/</loc>
+    <lastmod>2023-03-19T15:54:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thevisible.net/posts/welcome/</loc>
+    <lastmod>2023-03-19T15:54:00-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://thevisible.net/categories/</loc>
   </url>
   
   <url>
     <loc>https://thevisible.net/tags/</loc>
-  </url>
-  
-  <url>
-    <loc>https://thevisible.net/</loc>
   </url>
   
 </urlset>
