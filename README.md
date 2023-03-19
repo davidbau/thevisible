@@ -1,3 +1,1 @@
 # thevisible.net
-
-Under construction.
