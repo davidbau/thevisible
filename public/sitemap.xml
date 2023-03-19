@@ -3,12 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://thevisible.net/posts/</loc>
+    <loc>https://thevisible.net/</loc>
     <lastmod>2023-03-19T15:54:00-04:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://thevisible.net/</loc>
+    <loc>https://thevisible.net/posts/</loc>
     <lastmod>2023-03-19T15:54:00-04:00</lastmod>
   </url>
   
