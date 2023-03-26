@@ -1,5 +1,5 @@
 ---
-title: "001 Catching Up"
+title: "Catching Up"
 date: 2023-03-26T14:36:12-04:00
 ---
 
