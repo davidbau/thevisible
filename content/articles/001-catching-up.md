@@ -1,6 +1,7 @@
 ---
 title: "Catching Up"
 date: 2023-03-26T14:36:12-04:00
+author: David Bau
 summary: Here is a crash-course in modern language modeling, in the form of an email response to questions from an old friend who is a lead engineer at Google. We discussed what is going on with GPT models, RLHF, AI Safety, and the new ChatGPT plug-in model. A lot has been happening in the last few years.
 ---
 

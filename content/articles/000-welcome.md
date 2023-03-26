@@ -1,6 +1,7 @@
 ---
 title: "Welcome"
 date: 2023-03-19T15:54:00-04:00
+author: David Bau
 summary: Welcome to The Visible Net, a blogging outlet for the “East-Coast Contingent” of mechanistic interpretability machine intelligence researchers.  We begin with a bit about your host, Professor David Bau, and why he left Google to go to academia while so many machine learning researchers have ben moving in the opposite direction.
 ---
 Welcome to The Visible Net, a blogging outlet for the “East-Coast Contingent” of mechanistic interpretability machine intelligence researchers.
