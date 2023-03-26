@@ -13,7 +13,7 @@ Yet David is not a deep learning specialist.  He is an outsider to our field, so
   * What about [Eliezer Yudowsky's](https://www.youtube.com/watch?v=EUjc1WuyPT8) AI safety discussions?
   * And what about this new [component architecture in chatGPT](https://openai.com/blog/chatgpt-plugins)?
 
-So much to catch up on.  Here is my response to David's specific questions.  It is a bit of a crash-course in modern large language modeling.  A lot hs been happening in the lat few years.
+So much to catch up on.  Here is my response to David's specific questions.  It is a bit of a crash-course in modern large language modeling.  A lot has been happening in the last few years.
 
 # Yes, it is a monolith.
 
