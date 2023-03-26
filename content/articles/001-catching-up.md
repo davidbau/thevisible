@@ -1,17 +1,18 @@
 ---
 title: "Catching Up"
 date: 2023-03-26T14:36:12-04:00
+summary: Catching up with an old friend who is a lead engineer at Google, we discussed what is going on with GPT models, RLHF, AI Safety, and the new ChatGPT plug-in model. A lot has been happening in the last few years.  Here is a bit of our email, which is a crash-course in modern langauge modeling.
 ---
 
 Today I got an email from my good college friend David Maymudes.  David got his math degree from Harvard few years ahead of me, and he I have both worked at Microsoft and Google at overlapping times. He is still at Google now.  We have both witnessed and helped drive major cycles of platform innovation in the industry in the past, and David is well aware of the important pieces of work that go into building a new technology ecosystem.  From inside Google today, he is a direct witness to the transformation of that company as the profound new approaches to artificial intelligence become a corporate priority.  It is obvious that something major is afoot: a new ecosystem is being created.  Although David does not directly work on large-scale machine learning, it touches on his work. Because it is touching everybody.
 
 Yet David is not a deep learning specialist.  He is an outsider to our field, so he wrote me to ask some clarifying questions about some specific technical ideas:
-  * What is RLHF?
+  * What is [RLHF](https://huggingface.co/blog/rlhf) all about?
   * Do people do it by literally train the whole thing as a single black box, or are there many boxes?
   * What about [Eliezer Yudowsky's](https://www.youtube.com/watch?v=EUjc1WuyPT8) AI Safety discussions?
   * And what about this new [component architecture in chatGPT](https://openai.com/blog/chatgpt-plugins)?
 
-So here is my response to David's specific questions.  It is a bit of a crash-course in modern large language modeling.  Think of it as a catch-up note for our technical friends who may not have been fully paying attention to what's been happening in deep networks over the last few years.
+So much to catch up on.  Here is my response to David's specific questions.  It is a bit of a crash-course in modern large language modeling.  A lot hs been happening in the lat few years.
 
 # Yes, it is a monolith.
 
