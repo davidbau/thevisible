@@ -10,7 +10,7 @@ Today I got an email from my good college friend David Maymudes.  David got his 
 Yet David is not a deep learning specialist.  He is an outsider to our field, so he wrote me to ask some clarifying questions about some specific technical ideas:
   * What is [RLHF](https://huggingface.co/blog/rlhf) all about?
   * Do people do it by literally train the whole thing as a single black box, or are there many boxes?
-  * What about [Eliezer Yudowsky's](https://www.youtube.com/watch?v=EUjc1WuyPT8) AI Safety discussions?
+  * What about [Eliezer Yudowsky's](https://www.youtube.com/watch?v=EUjc1WuyPT8) AI safety discussions?
   * And what about this new [component architecture in chatGPT](https://openai.com/blog/chatgpt-plugins)?
 
 So much to catch up on.  Here is my response to David's specific questions.  It is a bit of a crash-course in modern large language modeling.  A lot hs been happening in the lat few years.
@@ -41,7 +41,7 @@ One of the most effective ways to create a prompt is called "in-context learning
 
 But it's more convenient for people when a model is able to solve a problem "zero shot," i.e., with no worked examples shown at all.  Some consensus is now forming that the most useful mode for these models is the "instruction-following" mode, where instead of requiring a few examples, you give it an explicit instruction, like "write me a poem", and then it follows with a poem.  Base pretrained GPT can do that, to some extent, but it is often unsure about whether it should actually follow the instructions or not.  Perhaps after you give it an instruction, you might want some other text, such as a list of other possible different instructions.
 
-# Instruction fine-tuning and AI Safety.
+# Instruction fine-tuning and AI safety.
 
 One of the main techniques in modern machine learning is *transfer learning* (studied by many e.g., [Yosinksi 2014](https://papers.baulab.info/Yosinksi-2014.pdf)), where you begin with some great capabilities in a pretrained model, then you continue to train it, fine-tuning the parameters to better fit data drawn from the specific context where you want to apply it.  The goal ist to get the capabilities focused on the problem you care about.  For example, maybe the original GPT model is able to do things that appear in open text that are a little less interesting, such as write fallacious, fractured, or even fanatical text, since there is a lot of such text in real-world training data.  We might want to fine-tune the model by training it to mimic an honest, humanlike, and humane style that we wish to se.
 
