@@ -17,7 +17,7 @@ To implement a base autoregressive (next-word-prediction) transformer model like
 
 This function is implemented using a series of numerical steps. We turn each word fragment in the input into a vector of a few thousand numbers using a big lookup table, so that the whole sequence of input words will be many thousands of numbers. We then execute a single, crazy big high-dimensional calculation that applies a few rounds of simple arithmetic to all these numbers in a few dozen parallel steps, with each step transforming each array of many thousands of numbers to another array of just as many numbers.
 
-![Autoregressive Transformer Architecture](/static/images/gpt_arch_figure.png)
+![Autoregressive Transformer Architecture](/images/gpt_arch_figure.png)
 
 At each step, every single number could in principle depend on every number of the previous step, but the exact dependencies are determined by an architecture that does lookups in big parameter tables. The size of those tables puts a ceiling on the complexity that can be encoded. For example, GPT-3 has 175 billion parameters, while the size of GPT-4 is unknown but estimated to be about a trillion parameters. You can think of these sizes as "the size of the interpreter that is processing the text." After the dozens of rounds of calculation, the final output vector is read off the last layer of the output, and that vector is compared to a final output lookup table (that contains one vector for each possible output word fragment) that is used to determine the possible next words.
 
@@ -31,7 +31,7 @@ The idea that so many capabilities could be learned from this task is very surpr
 
 In a series of increasing investments in larger GPT models trained with more parameters on more text, Radford and his collaborators found that this simple architecture was a remarkable chameleon. For example, it quickly guesses the context, and if it thinks it is in the middle of a book of poems, it will use a strategy that leads it to generate more poetry. But if it sees context that looks like a blog, it will generate blog-like text. The same applies for a spreadsheet, screenplay, FORTRAN program, Reddit thread, parallel multilingual text, answer key for a test, output of a computer script, dialogue between two people, diary describing the internal ruminations of a person, and so on. The extreme context-sensitivity seems like an oddball phenomenon, but it may be a linchpin that leads to reasonable models of cognition, as [Jacob Andreas convincingly argued](https://arxiv.org/abs/2212.01681).
 
-![Prompt engineering techniques](/static/images/prompt_style_figure.png)
+![Prompt engineering techniques](/images/prompt_style_figure.png)
 
 The observation of context-sensitivity has led to a flood of ["prompt engineering"](https://arxiv.org/abs/2107.13586) that demonstrates all the tricks you can do by setting up some clever input context for the model. For example, if you set up the input text to look like a standardized test, you can see how well the model can complete the answer key, and what is remarkable is that the large models contain [real-world knowledge of facts and relationships](https://arxiv.org/abs/1909.01066), or even the ability to [solve some math problems](https://arxiv.org/abs/2103.03874). With different prompts, it is stunning to see the model do things like [translate between French and English](https://arxiv.org/abs/2302.09210) when you prompt it as if it is working on parallel text, predict the output of a computer program given the code, write out step-by-step reasoning for some complex problem, or even follow instructions, e.g. "write me a poem," and then it predicts that the best next words are a poem.
 
@@ -64,7 +64,7 @@ So you can make this fourth thing part of the fine-tuning data.  For example, yo
 
 We could bake such interactions into the transformer during pre-training; these are called "retrieval based architectures," (e.g., see [RETRO, Sebastian Borgeaud 2021](https://arxiv.org/abs/2112.04426)), and they work.  They tend to create models that do not waste all their parameters memorizing the world's knowledge, but instead they will make requests to see different pieces of text when making predictions. But you could also add such interactions at fine-tuning time, after pretraining on ordinary word prediction.  Because fine-tuning is fast and much more amenable to quick experimentation and engineering than training from scratch, that is probably what I would expect to see in practice.  What you would need is a data set of thousands of worked examples of tool use.
 
-![Tool use by a language model](/static/images/tool_use_figure.png)
+![Tool use by a language model](/images/tool_use_figure.png)
 
 OpenAI has not revealed the internal architecture or training methods used to create ChatGPT, but three days ago they released a new plugin architecture that suggests that tool-use has been a major part of their work on ChatGPT.  You can see some examples of their plug-in architecture here.
 
