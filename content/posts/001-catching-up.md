@@ -2,7 +2,7 @@
 title: "Catching Up"
 date: 2023-03-26T14:36:12-04:00
 author: David Bau
-summary: Here is a crash-course in modern language modeling, in the form of an email response to questions from an old friend who is a lead engineer at Google. We discussed what is going on with GPT models, RLHF, AI Safety, and the new ChatGPT plug-in model. A lot has been happening in the last few years.
+summary: Today, I received an email from an old college friend who asked about GPT models, RLHF, AI safety, and the new ChatGPT plug-in model.  A lot has been happening in the past few years, so here is a bit of a crash course on the current state of the large language model world.
 ---
 
 Today, I received an email from my good college friend David Maymudes. David got his math degree from Harvard a few years ahead of me, and we have both worked at Microsoft and Google at overlapping times. He is still at Google now. We have both witnessed and helped drive major cycles of platform innovation in the industry in the past, and David is well aware of the important pieces of work that go into building a new technology ecosystem. From inside Google today, he is a direct witness to the transformation of that company as the profound new approaches to artificial intelligence become a corporate priority. It is obvious that something major is afoot: a new ecosystem is being created. Although David does not directly work on large-scale machine learning, it touches on his work, because it is touching everybody.
