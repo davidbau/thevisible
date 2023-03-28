@@ -8,7 +8,7 @@ Welcome to The Visible Net, a blogging outlet for the â€œEast-Coast Contingentâ€
 
 # Introductions.
 
-I am David Bau, an assistant professor at Northeastern University, and my lab focuses on understanding the interpretable mechanisms that emerge from large-scale machine learning.  I am a late-career academic. I returned to finish my PhD at MIT several years ago, after two decades building products and leading product development for Google, Microsoft, and startups.
+I am [David Bau](https://baulab.info/), an assistant professor at Northeastern University, and my lab focuses on understanding the interpretable mechanisms that emerge from large-scale machine learning.  I am a late-career academic. I returned to finish my PhD at MIT several years ago, after two decades building products and leading product development teams for Google, Microsoft, and startups.
 
 I plan for this to be a shared blogging space for my students, collaborators, and others working on mechanistic interpretability.
 
