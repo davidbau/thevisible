@@ -3,6 +3,8 @@ languageCode = "en-us"
 theme = "poison"
 paginate = 10
 pluralizelisttitles = false   # removes the automatically appended "s" on sidebar entries
+sitename = 'The Visible Net'
+author = 'Authors'
 
 [params]
     brand = "The Visible Net"                      # name of your site - appears in the sidebar
