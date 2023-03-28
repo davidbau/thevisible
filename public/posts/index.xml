@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on </title>
+    <title>Posts on The Visible Net</title>
     <link>https://thevisible.net/posts/</link>
-    <description>Recent content in Posts on </description>
+    <description>Recent content in Posts on The Visible Net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 26 Mar 2023 14:36:12 -0400</lastBuildDate><atom:link href="https://thevisible.net/posts/index.xml" rel="self" type="application/rss+xml" />

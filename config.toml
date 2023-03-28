@@ -2,12 +2,13 @@ baseURL = "https://thevisible.net/"
 languageCode = "en-us"
 theme = "poison"
 paginate = 10
+title = 'The Visible Net'
 pluralizelisttitles = false   # removes the automatically appended "s" on sidebar entries
-sitename = 'The Visible Net'
-author = 'Authors'
 
 [params]
     brand = "The Visible Net"                      # name of your site - appears in the sidebar
+    author = 'David Bau and contributors'
+
     # brand_image = "/images/test.jpg"    # path to the image shown in the sidebar
     description = "Dissecting the mechanisms of machine intelligence"
     dark_mode = false                     # optional - defaults to false
