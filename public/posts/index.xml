@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on </title>
-    <link>/posts/</link>
+    <link>https://thevisible.net/posts/</link>
     <description>Recent content in Posts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 Mar 2023 14:36:12 -0400</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Mar 2023 14:36:12 -0400</lastBuildDate><atom:link href="https://thevisible.net/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Catching Up</title>
-      <link>/posts/001-catching-up/</link>
+      <link>https://thevisible.net/posts/001-catching-up/</link>
       <pubDate>Sun, 26 Mar 2023 14:36:12 -0400</pubDate>
       
-      <guid>/posts/001-catching-up/</guid>
+      <guid>https://thevisible.net/posts/001-catching-up/</guid>
       <description>Today, I received an email from an old college friend who asked about GPT models, RLHF, AI safety, and the new ChatGPT plug-in model.  A lot has been happening in the past few years, so here is a bit of a crash course on the current state of the large language model world.</description>
     </item>
     
     <item>
       <title>Welcome</title>
-      <link>/posts/000-welcome/</link>
+      <link>https://thevisible.net/posts/000-welcome/</link>
       <pubDate>Sun, 19 Mar 2023 15:54:00 -0400</pubDate>
       
-      <guid>/posts/000-welcome/</guid>
+      <guid>https://thevisible.net/posts/000-welcome/</guid>
       <description>Welcome to The Visible Net, a blogging outlet for the “East-Coast Contingent” of mechanistic interpretability machine intelligence researchers, as well as an incubation space for the proposed National Deep Inference Facility.  And some introductions, from David Bau.</description>
     </item>
     
