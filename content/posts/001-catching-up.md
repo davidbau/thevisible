@@ -27,7 +27,7 @@ Transformers can be thought of as encouraging sparse data-associative wiring dia
 
 # Prompt engineering and in-context learning.
 
-The idea that so many capabilities could be learned from this task is very surprising and was not obvious to experts. Credit for some intuition goes to [Alec Radford at OpenAI who pushed hard on scaling up autoregregressive transformers in the initial GPT work in 2018](https://papers.baulab.info/Radford-2018.pdf).
+The idea that so many capabilities could be learned from this task was not obvious to experts until very recently. Credit for some intuition goes to [Alec Radford at OpenAI who pushed hard on scaling up autoregregressive transformers in the initial GPT work in 2018](https://papers.baulab.info/Radford-2018.pdf).
 
 In a series of increasing investments in larger GPT models trained with more parameters on more text, Radford and his collaborators found that this simple architecture was a remarkable chameleon. For example, it quickly guesses the context, and if it thinks it is in the middle of a book of poems, it will use a strategy that leads it to generate more poetry. But if it sees context that looks like a blog, it will generate blog-like text. The same applies for a spreadsheet, screenplay, FORTRAN program, Reddit thread, parallel multilingual text, answer key for a test, output of a computer script, dialogue between two people, diary describing the internal ruminations of a person, and so on. The extreme context-sensitivity seems like an oddball phenomenon, but it may be a linchpin that leads to reasonable models of cognition, as [Jacob Andreas convincingly argued](https://arxiv.org/abs/2212.01681).
 
