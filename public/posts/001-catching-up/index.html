@@ -128,7 +128,7 @@
     },
     "datePublished": "2023-03-26",
     "description": "",
-    "wordCount":  2797 ,
+    "wordCount":  2799 ,
     "mainEntityOfPage": "True",
     "dateModified": "2023-03-26",
     "image": {
@@ -366,7 +366,7 @@ We can train models to follow our instructions and to follow societal norms and 
 <p>OpenAI has not revealed the internal architecture or training methods used to create ChatGPT, but three days ago they released a new plugin architecture that suggests that tool-use has been a major part of their work on ChatGPT.  You can see some examples of their plug-in architecture here.</p>
 <p><a href="https://platform.openai.com/docs/plugins/examples">https://platform.openai.com/docs/plugins/examples</a>.</p>
 <p>Using their API, you can define connections to internet tools, and chatGPT will use those tools whenever it chooses to. The natural way to interface between a language model and an eternal resource is to train fine-tune the model to emit special tokens such as <code>[invoke tool with input X]</code> in the output that would be hidden from the user but instead routed to the tool. To do this, one would create a dataset demonstrating such tool use, maybe by instrumenting web browsers to watch how people use online tools such as search engines, stores, calendars, etc, in practice.  Or maybe by having a team of experts making REST API calls for successful interactions and encoding these as examples &ldquo;tool use example&rdquo; scripts.</p>
-<p>So, in a world with many tools, how does the system decide which tool is the best one to use?  Expect this question to be one of the pivotal competitive questions in coming decades.</p>
+<p>So, in a world with many tools, how does the system decide which tool is the best one to use?  Expect this type of judgment to be one of the pivotal competitive questions in coming decades.</p>
 <p>OpenAI has not disclosed how they are training ChatGPT to choose between tools, but this could be solved in a number of ways, for example, in their tool-fine-tuning examples, they could provide text to the input of GPT that lists all the descriptions of tools, and then after that context, they could have examples of choosing the right tool from the list at an appropriate moment during conversation.  After seeing a few thousand of such worked examples during fine-tuning, I would expect the model to be able to mimic generic tool use pretty well.  Then the training data could be curated to exemplify behavior that OpenAI judges as most desirable.</p>
 <h1 id="chatgpt-is-doubly-opaque">ChatGPT is doubly opaque.</h1>
 <p>We are in an interesting but concerning new era now, where the key decision-making of the algorithm is doubly opaque.  First, the way that OpenAI has hooked together and trained their system is opaque to us, since their architectures and training data are all proprietary trade secrets.  That is similar to how Google&rsquo;s search ranking is opaque to outsiders.  Google will never reveal its very clever internal methods for deciding between websites.</p>
