@@ -74,15 +74,15 @@ OpenAI has not revealed the internal architecture or training methods used to cr
 
 [https://platform.openai.com/docs/plugins/examples](https://platform.openai.com/docs/plugins/examples).
 
-OpenAI has not disclosed how they created this plugin architecture, but I imagine that what they have done is to create a general-purpose template that they have included in their instruction-following fine-tuning procedure where the model learns to recognize some form of `[invoke tool with input X]` for making a request to an external tool and seeing the response.  They have probably created a large dataset of such tool use, maybe by instrumenting web browsers to watch people using lots of tools online including search engines, calendars, online stores, etc.  Or maybe by having a team of people making REST API calls for successful interactions and encoding these as examples "instruction following" scripts.
+Using their API, you can define API request to an internet resource, and chatGPT will make those API requests at the right time. The natural way to interface between a language model and an eternal resource is to train fine-tune the model to emit special tokens such as `[invoke tool with input X]` at the appropriate time. To do this, one would create a dataset demonstrating such tool use, maybe by instrumenting web browsers to watch how people use online tools such as search engines, stores, calendars, etc, in practice.  Or maybe by having a team of experts making REST API calls for successful interactions and encoding these as examples "tool use exmample" scripts.
 
-So, in this world, how does the system decide which one is relevant to use?
+So, in a world with many tools, how does the system decide which tool is the best one to use?  Expect this question to be one of the pivotal competitive questions in coming decades.
 
-OpenAI has not disclosed how they are training ChatGPT to make this choice, but this could be solved in a number of ways, for example, in their instruction-fine-tuning examples, they could provide a piece of text to the input of GPT that lists all the descriptions of tools, and then after that context, they could have examples of choosing the right tool from the list at an appropriate moment during conversation, while being careful to demosntragte in the training data that tools that is not on the listed input should never be used.  After seeing a few thousand of such worked examples during fine-tuning, I would expect it to be able to mimic generic tool use pretty well.
+OpenAI has not disclosed how they are training ChatGPT to choose between tools, but this could be solved in a number of ways, for example, in their tool-fine-tuning examples, they could provide text to the input of GPT that lists all the descriptions of tools, and then after that context, they could have examples of choosing the right tool from the list at an appropriate moment during conversation.  After seeing a few thousand of such worked examples during fine-tuning, I would expect the model to be able to mimic generic tool use pretty well.  Then the training data could be curated to demonstrate behavior that OpenAI judges as most desirable.
 
 # ChatGPT is doubly opaque.
 
-We are in an interesting but concerning new era now, where the key decision-making of the algorithm is doubly opaque.  First, the way that OpenAI has hooked together their system is opaque to us, since it is a proprietary trade secret.  That is similar to how Google's search ranking is opaque to outsiders, since Google will not reveal its very clever internal methods for deciding between websites.
+We are in an interesting but concerning new era now, where the key decision-making of the algorithm is doubly opaque.  First, the way that OpenAI has hooked together and trained their system is opaque to us, since their architectures and training data are all proprietary trade secrets.  That is similar to how Google's search ranking is opaque to outsiders.  Google will never reveal its very clever internal methods for deciding between websites.
 
 But now, there is a second, profound issue, that should drive our real concern.  Unlike the case of Google (you and I both are aware of Google's internal query debugging facilities), when working with a massive model like GPT-3 or GPT-4, the decision-making of the model is opauqe even to OpenAI themselves.  When the model chooses one tool over another, the engineers may not have any insight as to "why," beyond the billions of tangled arithmetic operations that led to the prediction of a token.
 
@@ -90,7 +90,7 @@ We will train our models and guide our models using billions of pretraining exam
 
 What are these systems actually learning?
 
-That is the most urgent problem facing computer science, and maybe all of science, today.
+That is the most urgent problem facing computer science, and maybe all of science, today.  Answering that question has massive economic consequences.  And the question also delves into the ancient question of "what is thinking" and "what is knowledge?"
 
 It is important to ask the question transparently and openly, and not as a trade secret.
 
