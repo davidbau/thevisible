@@ -97,7 +97,7 @@ We are in an interesting but concerning new era now, where the key decision-maki
 
 ![ChatGPT is opaque to its makers](/images/doubly_opaque.png)
 
-But now, there is a second, profound issue, that should drive our real concern.  Unlike the case of Google (David: you and I both are aware of Google's internal query debugging facilities), when working with a massive model like GPT-3 or GPT-4, the decision-making of the model is opaque even to OpenAI themselves.  When the model chooses one tool over another, the engineers may not have any insight as to "why," beyond the billions of tangled arithmetic operations that led to the prediction of a token.
+But now, there is a second, profound issue, that should drive our real concern.  Unlike the case of Google (David: you and I both are aware of Google's internal query debugging facilities), when working with a massive model like GPT-3 or GPT-4, the decision-making of the model is opaque even to OpenAI themselves.  When the model chooses one behavior over another, the engineers may not have any insight as to "why," beyond the billions of tangled arithmetic operations that led to the prediction of a token.
 
 We will train our models and guide our models using billions of pretraining examples, cleverly chosen architectures, and thousands of fine-tuning examples.  But then the actual algorithm that it applies is the result of a massive and opaque optimization.
 
