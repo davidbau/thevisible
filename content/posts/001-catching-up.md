@@ -81,7 +81,7 @@ OpenAI has not revealed the internal architecture or training methods used to cr
 
 [https://platform.openai.com/docs/plugins/examples](https://platform.openai.com/docs/plugins/examples).
 
-Using their API, you can define API request to an internet resource, and chatGPT will make those API requests at the right time. The natural way to interface between a language model and an eternal resource is to train fine-tune the model to emit special tokens such as `[invoke tool with input X]` at the appropriate time. To do this, one would create a dataset demonstrating such tool use, maybe by instrumenting web browsers to watch how people use online tools such as search engines, stores, calendars, etc, in practice.  Or maybe by having a team of experts making REST API calls for successful interactions and encoding these as examples "tool use exmample" scripts.
+Using their API, you can define connections to internet tools, and chatGPT will use those tools whenever it chooses to. The natural way to interface between a language model and an eternal resource is to train fine-tune the model to emit special tokens such as `[invoke tool with input X]` in the output that would be hidden from the user but instead routed to the tool. To do this, one would create a dataset demonstrating such tool use, maybe by instrumenting web browsers to watch how people use online tools such as search engines, stores, calendars, etc, in practice.  Or maybe by having a team of experts making REST API calls for successful interactions and encoding these as examples "tool use example" scripts.
 
 So, in a world with many tools, how does the system decide which tool is the best one to use?  Expect this question to be one of the pivotal competitive questions in coming decades.
 
