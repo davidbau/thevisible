@@ -73,7 +73,7 @@ Why this might work at all is itself wondrous (and again, the subject of study i
 
 It is obvious that there is a fourth thing you might want the model to be able to depend on: tools and resources in the real world.
 
-So you can make this fourth thing part of the fine-tuning data.  For example, you could instruct the model, so that, as part of answering, when it would be approprate to do a Google search for X, it should output a special token `[invoke googlesearch X]`, and then it should expect to see further input that includes all the top Google search results.  Or when it would be appropriate to see the contents of a web page at url U, it should say `[invoke webget U]` and it would be able to see the contents of the web page on the input.
+So you can make this fourth thing part of the fine-tuning data.  For example, you could instruct the model, so that, as part of answering, when it would be approprate to do a Google search for X, it should output a special token sequence `[invoke googlesearch X]`, and then it should expect to see further input that includes all the top Google search results.  Or when it would be appropriate to see the contents of a web page at url U, it should say `[invoke webget U]` and it would be able to see the contents of the web page on the input.
 
 Of course an ordinary GPT model might have no idea when it should be doing web searches and so on, but perhaps if we give it a few examples, or better yet we include many thousand fully-worked interactions, where we pantomime the interaction with the open web within a fine-tuning data set, then it will start to exploit this new form of interaction.
 
@@ -97,7 +97,7 @@ We are in an interesting but concerning new era now, where the key decision-maki
 
 ![ChatGPT is opaque to its makers](/images/doubly_opaque.png)
 
-But now, there is a second, profound issue, that should drive our real concern.  Unlike the case of Google (David: you and I both are aware of Google's internal query debugging facilities), when working with a massive model like GPT-3 or GPT-4, the decision-making of the model is opaque even to OpenAI themselves.  When the model chooses one behavior over another, the engineers may not have any insight as to "why," beyond the billions of tangled arithmetic operations that led to the prediction of a token.
+But now, there is a second, profound issue, that sparks a deeper concern.  Unlike the case of Google, where Google engineers have traditional debugging tools for understanding the main ranking system, when working with a massive model like GPT-3 or GPT-4, the decision-making of the model is opaque even to OpenAI themselves.  When the model chooses one behavior over another, the engineers may not have any insight as to "why," beyond the billions of tangled arithmetic operations that led to the prediction of a token.
 
 We will train our models and guide our models using billions of pretraining examples, cleverly chosen architectures, and thousands of fine-tuning examples.  But then the actual algorithm that it applies is the result of a massive and opaque optimization.
 
