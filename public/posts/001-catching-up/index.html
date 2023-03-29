@@ -128,7 +128,7 @@
     },
     "datePublished": "2023-03-26",
     "description": "",
-    "wordCount":  2800 ,
+    "wordCount":  2802 ,
     "mainEntityOfPage": "True",
     "dateModified": "2023-03-26",
     "image": {
@@ -328,9 +328,9 @@
 <p>To implement a base autoregressive (next-word-prediction) transformer model like GPT, we create a function that takes a sequence of words as input and produces the predicted next word as output. The output is actually a ranking of all the possible next words and their correct probability weights.</p>
 <p>This function is implemented using a series of numerical steps.</p>
 <ol>
-<li>We turn each word fragment in the input into a vector of a few thousand numbers using a big lookup table, so that the whole sequence of input words will be many thousands of numbers: &ldquo;hidden state vectors.&rdquo;</li>
-<li>We then execute a single, crazy big high-dimensional calculation that applies a few rounds of simple arithmetic to all these numbers in a few dozen parallel steps, with each step transforming each array of vectors to another array of just as many vectors.</li>
-<li>After the dozens of rounds of calculation, the final output vector is read off the last layer of the output, and that vector is compared to a final output lookup table (listing a vector for each possible output word fragment) that determines the possible next words.</li>
+<li>We turn each word fragment in the input into a vector of a few thousand numbers using a big lookup table, so that the whole sequence of input words will be many thousands of numbers: an array of &ldquo;hidden state vectors.&rdquo;</li>
+<li>We then execute a single, crazy big high-dimensional calculation that applies a few rounds of simple arithmetic to all those numbers in a few dozen parallel steps, with each step transforming each array of vectors to another array of just as many vectors.</li>
+<li>After the dozens of rounds of calculation, the final vector is read off the last layer of the output, and that vector is compared to a final output lookup table (listing a vector for each possible output word fragment) that determines the predicted next words.</li>
 </ol>
 <p><img src="/images/gpt_arch_figure.png" alt="Autoregressive Transformer Architecture"></p>
 <p>At each step, every single number could in principle depend on every number of the previous step, but the exact dependencies are determined by an architecture that does lookups in big parameter tables. The size of those tables puts a ceiling on the complexity that can be encoded. For example, GPT-3 has 175 billion parameters, while the size of GPT-4 is unknown but estimated to be about a trillion parameters. You can think of these sizes as &ldquo;the size of the interpreter that is processing the text.&rdquo;</p>

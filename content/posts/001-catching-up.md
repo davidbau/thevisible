@@ -2,7 +2,7 @@
 title: "Catching Up"
 date: 2023-03-26T14:36:12-04:00
 author: David Bau
-summary: Today, I received an email from an old college friend who asked about GPT models, RLHF, AI safety, and the new ChatGPT plug-in model.  A lot has been happening in the past few years, so here is a bit of a crash course on the current state of the large language model world.
+summary: Today, I received an email from an old college friend who asked about GPT models, RLHF, AI safety, and the new ChatGPT plug-in model.  A lot has been happening in the past few years, so here is a bit of a crash course on the current state of the large language model world, and what concerns me about it.
 ---
 
 Today, I received an email from my good college friend David Maymudes. David got his math degree from Harvard a few years ahead of me, and we have both worked at Microsoft and Google at overlapping times. He is still at Google now. We have both witnessed and helped drive major cycles of platform innovation in the industry in the past (David designed the video API for Windows and created the AVI format!  And we both worked on Internet Explorer), so he is well aware of the important pieces of work that go into building a new technology ecosystem.
@@ -19,9 +19,9 @@ To implement a base autoregressive (next-word-prediction) transformer model like
 
 This function is implemented using a series of numerical steps.
 
- 1. We turn each word fragment in the input into a vector of a few thousand numbers using a big lookup table, so that the whole sequence of input words will be many thousands of numbers: "hidden state vectors."
- 2. We then execute a single, crazy big high-dimensional calculation that applies a few rounds of simple arithmetic to all these numbers in a few dozen parallel steps, with each step transforming each array of vectors to another array of just as many vectors.
- 3.  After the dozens of rounds of calculation, the final output vector is read off the last layer of the output, and that vector is compared to a final output lookup table (listing a vector for each possible output word fragment) that determines the possible next words.
+ 1. We turn each word fragment in the input into a vector of a few thousand numbers using a big lookup table, so that the whole sequence of input words will be many thousands of numbers: an array of "hidden state vectors."
+ 2. We then execute a single, crazy big high-dimensional calculation that applies a few rounds of simple arithmetic to all those numbers in a few dozen parallel steps, with each step transforming each array of vectors to another array of just as many vectors.
+ 3.  After the dozens of rounds of calculation, the final vector is read off the last layer of the output, and that vector is compared to a final output lookup table (listing a vector for each possible output word fragment) that determines the predicted next words.
 
 ![Autoregressive Transformer Architecture](/images/gpt_arch_figure.png)
 
