@@ -69,13 +69,15 @@ Why this might work at all is itself wondrous (and again, the subject of study i
 
 # Retrieval methods, tool use, and secrecy.
 
-It is obvious that there is a fourth thing you might want the model to be able to depend on, which is tools and resources in the real world.
+It is obvious that there is a fourth thing you might want the model to be able to depend on: tools and resources in the real world.
 
-So you can make this fourth thing part of the fine-tuning data.  For example, you could instruct the model, so that, as part of answering, when it would be approprate to do a Google search for X, it should output a special token `[invoke googlesearch X]`, and then it should expect to see further input that includes all the top Google search results.  Or when it would be appropriate to see the contents of a web page at url U, it should say `[invoke webget U]` and it would be able to see the contents of the web page on the input. Of course an ordinary GPT model might have no idea when it should be doing web searches and so on, but perhaps if we give it a few examples, or better yet we you include many thousand fully-worked interactions of this form, where we pantomime the interaction with the open web within an instruction-fine-tuning data set, then it will start to exploit this new form of interaction.
+So you can make this fourth thing part of the fine-tuning data.  For example, you could instruct the model, so that, as part of answering, when it would be approprate to do a Google search for X, it should output a special token `[invoke googlesearch X]`, and then it should expect to see further input that includes all the top Google search results.  Or when it would be appropriate to see the contents of a web page at url U, it should say `[invoke webget U]` and it would be able to see the contents of the web page on the input.
+
+Of course an ordinary GPT model might have no idea when it should be doing web searches and so on, but perhaps if we give it a few examples, or better yet we include many thousand fully-worked interactions, where we pantomime the interaction with the open web within a fine-tuning data set, then it will start to exploit this new form of interaction.
 
 ![Tool use by a language model](/images/tool_use_figure.png)
 
-We could bake such interactions into the transformer during pre-training; these are called "retrieval based architectures," (e.g., see [RETRO, Sebastian Borgeaud 2021](https://arxiv.org/abs/2112.04426)), and they work.  They tend to create models that do not waste all their parameters memorizing the world's knowledge, but instead they will make requests to see different pieces of text when making predictions. But you could also add such interactions at fine-tuning time, after pretraining on ordinary word prediction.  Because fine-tuning is fast and much more amenable to quick experimentation and engineering than training from scratch, that is probably what I would expect to see in practice.  What you would need is a data set of thousands of worked examples of tool use.
+We could bake such interactions into the transformer during pre-training. Those are called "retrieval based architectures," (e.g., see [RETRO, Sebastian Borgeaud 2021](https://arxiv.org/abs/2112.04426)), and they work.  They tend to create models that do not waste all their parameters memorizing the world's knowledge, but instead they will make requests to see different pieces of text when making predictions. But you could also add such interactions at fine-tuning time, after pretraining on ordinary word prediction.  Because fine-tuning is fast and much more amenable to quick experimentation and engineering than training from scratch, that is probably what I would expect to see in practice.  What you would need is a data set of thousands of worked examples of tool use.
 
 OpenAI has not revealed the internal architecture or training methods used to create ChatGPT, but three days ago they released a new plugin architecture that suggests that tool-use has been a major part of their work on ChatGPT.  You can see some examples of their plug-in architecture here.
 
@@ -90,6 +92,8 @@ OpenAI has not disclosed how they are training ChatGPT to choose between tools, 
 # ChatGPT is doubly opaque.
 
 We are in an interesting but concerning new era now, where the key decision-making of the algorithm is doubly opaque.  First, the way that OpenAI has hooked together and trained their system is opaque to us, since their architectures and training data are all proprietary trade secrets.  That is similar to how Google's search ranking is opaque to outsiders.  Google will never reveal its very clever internal methods for deciding between websites.
+
+![ChatGPT is opaque to its makers](/images/doubly_opaque.png)
 
 But now, there is a second, profound issue, that should drive our real concern.  Unlike the case of Google (David: you and I both are aware of Google's internal query debugging facilities), when working with a massive model like GPT-3 or GPT-4, the decision-making of the model is opauqe even to OpenAI themselves.  When the model chooses one tool over another, the engineers may not have any insight as to "why," beyond the billions of tangled arithmetic operations that led to the prediction of a token.
 
