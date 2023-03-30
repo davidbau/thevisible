@@ -12,7 +12,7 @@ From inside Google today, he is a direct witness to the transformation of that c
 
 Despite being an outsider to our field, David reached out to ask some clarifying questions about some specific technical ideas, including [RLHF](https://huggingface.co/blog/rlhf), [AI safety](https://www.youtube.com/watch?v=EUjc1WuyPT8), and the new [ChatGPT plug-in model](https://openai.com/blog/chatgpt-plugins).  There is so much to catch up on.  In response to David's questions, I wrote up a crash-course in modern large language modeling, which we will delve into in this blog.
 
-David's first question was whether people control models by literally training the whole thing as a single black box.  Or are there many boxes?
+David's first question was whether people control models by literally training the whole thing as a single black box.  Or are there many boxes trained separately?
 
 # Yes, it is a monolith.
 
