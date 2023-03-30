@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About on The Visible Net</title>
+    <link>https://thevisible.net/about/</link>
+    <description>Recent content in About on The Visible Net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 Mar 2023 05:35:26 -0400</lastBuildDate><atom:link href="https://thevisible.net/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://thevisible.net/about/about/</link>
+      <pubDate>Thu, 30 Mar 2023 05:35:26 -0400</pubDate>
+      
+      <guid>https://thevisible.net/about/about/</guid>
+      <description>The Visible Net is a blogging outlet for the “East-Coast Contingent” of mechanistic interpretability machine intelligence researchers, as well as an incubation space for the proposed National Deep Inference Facility. It is a shared blogging space for students, collaborators, and others working on mechanistic interpretability.
+Contact us at info@thevisible.net, or reach out to David directly.
+This project was started by David Bau, an assistant professor at Northeastern University. David&amp;rsquo;s lab focuses on understanding the interpretable mechanisms that emerge from large-scale machine learning.</description>
+    </item>
+    
+  </channel>
+</rss>
