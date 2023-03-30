@@ -6,7 +6,7 @@ summary: Today, I received an email from an old college friend who asked about G
 ---
 
 Today, I received an email from my good college friend David Maymudes. David got his math degree from Harvard a few years ahead of me, and we have both worked at Microsoft and Google at overlapping times. (David designed the video API for Windows and created the AVI format!  And we both worked on Internet Explorer.) He is still at Google now.
-/* We have both witnessed and helped drive major cycles of platform innovation in the industry in the past (David designed the video API for Windows and created the AVI format!  And we both worked on Internet Explorer), so he is well aware of the important pieces of work that go into building a new technology ecosystem. */
+<!-- We have both witnessed and helped drive major cycles of platform innovation in the industry in the past (David designed the video API for Windows and created the AVI format!  And we both worked on Internet Explorer), so he is well aware of the important pieces of work that go into building a new technology ecosystem. -->
 
 From inside Google today, he is a direct witness to the transformation of that company as the profound new approaches to artificial intelligence become a corporate priority. It is obvious that something major is afoot: a new ecosystem is being created. Although David does not directly work on large-scale machine learning, it touches on his work, because it is touching everybody.
 
