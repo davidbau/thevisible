@@ -6,7 +6,16 @@
     <description>Recent content in Posts on The Visible Net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 Mar 2023 14:36:12 -0400</lastBuildDate><atom:link href="https://thevisible.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 02 Apr 2023 17:30:38 -0400</lastBuildDate><atom:link href="https://thevisible.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>002 Is Artificial Intelligence Intelligent?</title>
+      <link>https://thevisible.net/posts/002-is-ai-intelligent/</link>
+      <pubDate>Sun, 02 Apr 2023 17:30:38 -0400</pubDate>
+      
+      <guid>https://thevisible.net/posts/002-is-ai-intelligent/</guid>
+      <description>The idea that large language models could be capable of cognition is not obvious. Neural language modeling has been around since Jeff Elman’s 1990 structure-in-time work, but 33 years passed between that initial idea and first contact with ChatGPT. What took so long? One reason is that very few people anticipated the efficacy of the language modeling task. In this blog I write about why few saw it coming, why some remain skeptical even in the face of amazing GPT-4 behavior, why it might be succeeding anyway, and what we should study next.</description>
+    </item>
+    
     <item>
       <title>Catching Up</title>
       <link>https://thevisible.net/posts/001-catching-up/</link>

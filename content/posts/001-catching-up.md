@@ -6,9 +6,8 @@ summary: Today, I received an email from an old college friend who asked about G
 ---
 
 Today, I received an email from my good college friend David Maymudes. David got his math degree from Harvard a few years ahead of me, and we have both worked at Microsoft and Google at overlapping times. (David designed the video API for Windows and created the AVI format!  And we both worked on Internet Explorer.) He is still at Google now.
-<!-- We have both witnessed and helped drive major cycles of platform innovation in the industry in the past (David designed the video API for Windows and created the AVI format!  And we both worked on Internet Explorer), so he is well aware of the important pieces of work that go into building a new technology ecosystem. -->
 
-From inside Google today, he is a direct witness to the transformation of that company as the profound new approaches to artificial intelligence become a corporate priority. It is obvious that something major is afoot: a new ecosystem is being created. Although David does not directly work on large-scale machine learning, it touches on his work, because it is touching everybody.
+From inside Google today, he is a direct witness to the transformation of that company as the profound new approaches to artificial intelligence become a corporate priority. It is obvious that something major is afoot: a new ecosystem is being created. Although David does not work on large-scale machine learning, it touches on his work, because it is touching everybody.
 
 Despite being an outsider to our field, David reached out to ask some clarifying questions about some specific technical ideas, including [RLHF](https://huggingface.co/blog/rlhf), [AI safety](https://www.youtube.com/watch?v=EUjc1WuyPT8), and the new [ChatGPT plug-in model](https://openai.com/blog/chatgpt-plugins).  There is so much to catch up on.  In response to David's questions, I wrote up a crash-course in modern large language modeling, which we will delve into in this blog.
 
@@ -100,7 +99,7 @@ We are in an interesting but concerning new era now, where the key decision-maki
 
 But now, there is a second profound issue that sparks a deeper concern.  Unlike the case of Google, where company engineers can understand the search ranking system with a set of traditional debugging tools, when we are working with a massive model like GPT-3 or GPT-4, the decision-making of the model is opaque even to OpenAI themselves.  When the model chooses one behavior over another, the engineers may not have any insight as to "why," beyond the billions of tangled arithmetic operations that led to the prediction of a token.
 
-We will train our models and guide our models using billions of pretraining examples, cleverly chosen architectures, and thousands of fine-tuning examples.  But then the actual algorithm that it applies is the result of a massive and opaque optimization.
+We will train our models using billions of pretraining examples, cleverly chosen architectures, and thousands of fine-tuning examples.  But then the actual algorithm that it applies is the result of a massive and opaque optimization.
 
 What are these systems actually learning?
 

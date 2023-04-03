@@ -128,7 +128,7 @@
     },
     "datePublished": "2023-03-26",
     "description": "",
-    "wordCount":  2767 ,
+    "wordCount":  2762 ,
     "mainEntityOfPage": "True",
     "dateModified": "2023-03-26",
     "image": {
@@ -270,6 +270,10 @@
                         </li>
                         
                             <li class="bullet">
+                                <a href="https://thevisible.net/posts/002-is-ai-intelligent/">002 Is Artificial Intelligence Intelligent?</a>
+                            </li>
+                        
+                            <li class="bullet">
                                 <a href="https://thevisible.net/posts/001-catching-up/">Catching Up</a>
                             </li>
                         
@@ -330,8 +334,7 @@
 </div>
 
   <p>Today, I received an email from my good college friend David Maymudes. David got his math degree from Harvard a few years ahead of me, and we have both worked at Microsoft and Google at overlapping times. (David designed the video API for Windows and created the AVI format!  And we both worked on Internet Explorer.) He is still at Google now.</p>
-<!-- raw HTML omitted -->
-<p>From inside Google today, he is a direct witness to the transformation of that company as the profound new approaches to artificial intelligence become a corporate priority. It is obvious that something major is afoot: a new ecosystem is being created. Although David does not directly work on large-scale machine learning, it touches on his work, because it is touching everybody.</p>
+<p>From inside Google today, he is a direct witness to the transformation of that company as the profound new approaches to artificial intelligence become a corporate priority. It is obvious that something major is afoot: a new ecosystem is being created. Although David does not work on large-scale machine learning, it touches on his work, because it is touching everybody.</p>
 <p>Despite being an outsider to our field, David reached out to ask some clarifying questions about some specific technical ideas, including <a href="https://huggingface.co/blog/rlhf">RLHF</a>, <a href="https://www.youtube.com/watch?v=EUjc1WuyPT8">AI safety</a>, and the new <a href="https://openai.com/blog/chatgpt-plugins">ChatGPT plug-in model</a>.  There is so much to catch up on.  In response to David&rsquo;s questions, I wrote up a crash-course in modern large language modeling, which we will delve into in this blog.</p>
 <p>David&rsquo;s first question was whether people control models by literally training the whole thing as a single black box.  Or are there many boxes trained separately?</p>
 <h1 id="yes-it-is-a-monolith">Yes, it is a monolith.</h1>
@@ -384,7 +387,7 @@ We can train models to follow our instructions and to follow societal norms and 
 <p>We are in an interesting but concerning new era now, where the key decision-making of the algorithm is doubly opaque.  First, the way that OpenAI has hooked together and trained their system is opaque to us, since their architectures and training data are all proprietary trade secrets.  That is similar to how Google&rsquo;s search ranking is opaque to outsiders.  Google will never reveal its very clever internal methods for deciding between websites.</p>
 <p><img src="/images/doubly_opaque.png" alt="ChatGPT is opaque to its makers"></p>
 <p>But now, there is a second profound issue that sparks a deeper concern.  Unlike the case of Google, where company engineers can understand the search ranking system with a set of traditional debugging tools, when we are working with a massive model like GPT-3 or GPT-4, the decision-making of the model is opaque even to OpenAI themselves.  When the model chooses one behavior over another, the engineers may not have any insight as to &ldquo;why,&rdquo; beyond the billions of tangled arithmetic operations that led to the prediction of a token.</p>
-<p>We will train our models and guide our models using billions of pretraining examples, cleverly chosen architectures, and thousands of fine-tuning examples.  But then the actual algorithm that it applies is the result of a massive and opaque optimization.</p>
+<p>We will train our models using billions of pretraining examples, cleverly chosen architectures, and thousands of fine-tuning examples.  But then the actual algorithm that it applies is the result of a massive and opaque optimization.</p>
 <p>What are these systems actually learning?</p>
 <p>That is the most urgent problem facing computer science, and maybe all of science, today.  Answering that question has massive economic consequences.  And the question also delves into ancient questions, &ldquo;what is thinking&rdquo; and &ldquo;what is knowledge?&rdquo;</p>
 <p>It is important to ask the question transparently and openly, and not as a trade secret.</p>
