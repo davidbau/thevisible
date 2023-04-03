@@ -9,7 +9,7 @@ The idea that large language models could be capable of cognition is not obvious
 
 This blog was inspired after rereading [Karen Spark-Jones’ 2004 note](https://papers.baulab.info/also/Spark-Jones-2004.pdf) that asks whether the generative model for language modeling is rational or not. In it, she points out that language models (such as GPT) are based on a highly implausible statistical model of the mechanisms of language, like the one depicted here:
 
-![Simple autoregressive graphical model](images/graph_compute.png)
+![Simple autoregressive graphical model](/images/graph_compute.png)
 
 The reason this picture seems so unlikely to lead to a rational model of intelligence is that *nobody actually believes that words are actually the cause for other words!* This graphical model is just a shorthand way to express the assertion that the probability distribution of the next word y depends on nothing else other than the observation of the previous words x. When skeptical critics note that LLMs are mere [stochastic parrots](https://dl.acm.org/doi/pdf/10.1145/3442188.3445922), or when they warn of the [false promise of ChatGPT](https://www.nytimes.com/2023/03/08/opinion/noam-chomsky-chatgpt-ai.html), the implausibility of the language modeling framework seems to be the root of it.  Words are not the cause of other words. But that is the basic assumption that language models make.
 
@@ -19,7 +19,7 @@ Yet, fundamentally, ChatGPT works in the same way. And somehow, it does seem pro
 
 To appreciate what Spark-Jones saw to be missing in the traditional language modeling view, contrast it to the following graph that provides a more rational model for the cognitive process underlying language.
 
-![Simple graphical model incorporating meaning](images/graph_meaning1.png)
+![Simple graphical model incorporating meaning](/images/graph_meaning1.png)
 
 Here the “m” denotes the underlying meaning m within your mind that causes you to utter the words. This model is more plausible, because it is not words that cause other words. Rather, it is our thoughts and intentions and desires that cause words to be spoken.
 
@@ -29,19 +29,19 @@ Before you object that such an imaginative abstraction is unrelated to practical
 
 Both architectures are able to synthesize realistic-looking images of the world. However, it seems very unlikely that the Pixel-CNN architecture would contain any sensible representation of the world, because *nobody believes that pixels cause other pixels.*
 
-![PixelCNN vs GAN models](images/graph_pixelcnn_vs_gan.png)
+![PixelCNN vs GAN models](/images/graph_pixelcnn_vs_gan.png)
 
 On the other hand, GAN architecture seems more rational and more promising, because it posits a set of variables z that are the cause of all the pixels together.  In a GAN, we are hoping for z to represent “state of the world” and “state of the camera,” and for this state to somehow lead to a reasonble set of calculations to produce the image of a realistic scene.
 
 Merely setting up a computation graph in the same shape as a plausible graphical model does not guarantee that we will get an understandable representation. However, in GANs, remarkably, it does start to happen.  If you are unfamiliar with GANs, I recommend reading [Karras’s StyleGAN papers](https://arxiv.org/abs/1812.04948) and then the [StyleSpace paper from Wu](https://arxiv.org/abs/2011.12799). Wu found that there is a small set of bottleneck “stylespace” neurons within StyleGAN that correspond to real-world concepts such as whether a person is wearing glasses or whether they are smiling.  The results are empirical, but they have been observed in various models with several architectural variations and trained on many different data sets. In my own research, [I previously found similar neurons in other GANs](https://arxiv.org/abs/1811.10597), but Wu’s subsequent finding on StyleGAN is the clearest example of single-neuron disentanglement seen to date. For example, when we reproduce Wu's results, we find individual neurons that control complex but very sensible things like whether the lights are turned on or off in a room.
 
-![GAN single-neuron control](images/gan_neuron_control.gif)
+![GAN single-neuron control](/images/gan_neuron_control.gif)
 
 Unfortunately, GANs and similar architectures that have such a rational graphical model have not (so far) been successful at modeling anything as complex as natural language.  That might be due to the fact that the cognitive processes within a human mind that lead to language are too intricate for those architectures to imitate. For example, humans draw upon an enormous amount of knowledge when thinking about a sentence to utter.
 
 Consider: the words “soccer” or “tennis” are often reasonable alternatives to “basketball,” but when we talk about Shaq playing basketball, those other sports cannot be substituted in that particular sentence. That is not because theey would be grammatically incorrect, but because the actual thinking process behind the sentence is not just about which words would fit in a grammar. Rather, the sentence ”Shaquille O’Neal plays basketball” is a reflection of the memory-retrieval process within our mind reflecting our knowledge about Shaq. We would only say “soccer” if we were remembering the sport of a soccer-playing athlete, like Megan Rapinoe. A decomposition of the individual ideas within our mind might be diagrammed like this.
 
-![Simple graphical model decomposing knowledge](images/graph_meaning2.png)
+![Simple graphical model decomposing knowledge](/images/graph_meaning2.png)
 
 For complex problems like modeling the knowledge that is revealed through human language, GANs cannot seem to learn how to do it.  At least not yet.
 
@@ -51,7 +51,7 @@ In contrast, large-scale transformers have succeeded at modeling sentences like 
 
 The diagram below shows one hypothesis.
 
-![Simple graphical model decomposing knowledge](images/graph_meaning2.png)
+![Simple graphical model decomposing knowledge](/images/graph_meaning2.png)
 
 Note that this hypothetical model is just an expansion of the original x-to-y language modeling framework, with more intermediate steps.  However, I have intentionally drawn it to resemble the red-arrow graph which is a more rational view of the cognitive process.  Instead of variables "m," that stand for abstract components of meaning within a mental process, we have written hidden variables "h," which stand for physically realized hidden states within an artificial neural network.  The "h" variables are numbers, or combinations of numbers, or functions of numbers, within the neural network.  Some of the arrows flow in the wrong direction, but the independence relations have the same structure as the rational model.  Perhaps, when we model language in our irrational way, with words causing other words, it might be learning a structure like this internally.
 
