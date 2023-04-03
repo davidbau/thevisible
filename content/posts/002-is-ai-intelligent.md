@@ -11,7 +11,7 @@ What took so long?  In this blog I write about why few saw it coming, why some r
 
 This blog was inspired after rereading [Karen Spark-Jones’ 2004 note](https://papers.baulab.info/also/Spark-Jones-2004.pdf) that asks whether the generative model for language modeling is rational or not. In it, she points out that language models (such as GPT) are based on a highly implausible statistical model of the mechanisms of language, like the one depicted here:
 
-![Simple autoregressive graphical model](/images/graph_compute.png)
+![Simple autoregressive graphical model](/images/graph_wordpred.png)
 
 The reason this picture seems so unlikely to lead to a rational model of intelligence is that *nobody actually believes that words are actually the cause for other words!* This graphical model is just a shorthand way to express the assertion that the probability distribution of the next word y depends on nothing else other than the observation of the previous words x. When skeptical critics note that LLMs are mere [stochastic parrots](https://dl.acm.org/doi/pdf/10.1145/3442188.3445922), or when they warn of the [false promise of ChatGPT](https://www.nytimes.com/2023/03/08/opinion/noam-chomsky-chatgpt-ai.html), the implausibility of the language modeling framework seems to be the root of it.  Words are not the cause of other words. But that is the basic assumption that language models make.
 
@@ -53,7 +53,7 @@ In contrast, large-scale transformers have succeeded at modeling sentences like 
 
 The diagram below shows one hypothesis.
 
-![Simple graphical model decomposing knowledge](/images/graph_meaning2.png)
+![Simple graphical model decomposing knowledge](/images/graph_compute.png)
 
 Note that this hypothetical model is just an expansion of the original x-to-y language modeling framework, with more intermediate steps.  However, I have intentionally drawn it to resemble the red-arrow graph which is a more rational view of the cognitive process.  Instead of variables "m," that stand for abstract components of meaning within a mental process, we have written hidden variables "h," which stand for physically realized hidden states within an artificial neural network.  The "h" variables are numbers, or combinations of numbers, or functions of numbers, within the neural network.  Some of the arrows flow in the wrong direction, but the independence relations have the same structure as the rational model.  Perhaps, when we model language in our irrational way, with words causing other words, it might be learning a structure like this internally.
 
