@@ -9,7 +9,7 @@ What took so long?  In this blog I write about why few saw it coming, why some r
 
 # Spark-Jones’s worry about language modeling
 
-This blog was inspired after rereading [Karen Spark-Jones’ 2004 note](https://papers.baulab.info/also/Spark-Jones-2004.pdf) that asks whether the generative model for language modeling is rational or not. In it, she points out that language models (such as GPT) are based on a highly implausible statistical model of the mechanisms of language, like the one depicted here:
+This blog was inspired by [Karen Spark-Jones’ 2004 note](https://papers.baulab.info/also/Spark-Jones-2004.pdf) that asks whether the generative model for language modeling is rational or not. In it, she points out that language models (such as GPT) are based on a highly implausible statistical model of the mechanisms of language, like the one depicted here:
 
 ![Simple autoregressive graphical model](/images/graph_wordpred.png)
 
