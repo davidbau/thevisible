@@ -27,7 +27,7 @@ Spark-Jones drew graphs like this to indicate what we are really after. Here the
 
 # GANs have the right shape but cannot do language
 
-Before you object that such an imaginative abstraction is unrelated to practical consideration in artificial neural networks, keep in mind that it is common practice to create neural architectures with an explicit state vector that plays the role of m.  For example, contrast Pixel-CNN networks, which model an image by predicting each pixel as a consequence of the previously-seen pixels above and to the left, with generative adversarial networks (GANs), that explicitly model a small hidden state z that is the representation that predicts all the pixels, where z has no upstream dependencies.
+Before you object that such an imaginative abstraction is unrelated to practical considerations in artificial neural networks, keep in mind that it is common to create neural architectures with an explicit state vector that plays the role of m.  For example, contrast Pixel-CNN networks, which model an image by predicting each pixel as a consequence of the previously-seen pixels above and to the left, with generative adversarial networks (GANs), that explicitly model a small hidden state z that is the representation that predicts all the pixels, where z has no upstream dependencies.
 
 Both architectures are able to synthesize realistic-looking images of the world. However, it seems very unlikely that the Pixel-CNN architecture would contain any sensible representation of the world, because *nobody believes that pixels cause other pixels.*
 
@@ -35,9 +35,9 @@ Both architectures are able to synthesize realistic-looking images of the world.
 
 On the other hand, the GAN architecture seems more rational and more promising, because it posits a set of variables z that are the cause of all the pixels together.  In a GAN, we are hoping for z to represent “state of the world” and “state of the camera,” and for this state to lead to a reasonble set of calculations to produce the image of a realistic scene.
 
-Remarkably, in GANs this setup shows evidence of working.  If you are unfamiliar with GANs, I recommend reading [Karras’s StyleGAN papers](https://arxiv.org/abs/1812.04948) and then the [StyleSpace paper from Wu](https://arxiv.org/abs/2011.12799). Wu found that there is a small set of bottleneck “stylespace” neurons within StyleGAN that correspond to real-world concepts such as whether a person is wearing glasses or whether they are smiling.  The results are empirical, but they have been observed in various models with several architectural variations and trained on many different data sets.
+Remarkably, in GANs this setup shows evidence of creating rational models of the world.  If you are unfamiliar with GANs, I recommend reading [Karras’s StyleGAN papers](https://arxiv.org/abs/1812.04948) and then the [StyleSpace paper from Wu](https://arxiv.org/abs/2011.12799). Wu found that there is a small set of bottleneck “stylespace” neurons within StyleGAN that correspond to real-world concepts such as whether a person is wearing glasses or whether they are smiling.  The results are empirical, but they have been observed in various models with several architectural variations and trained on many different data sets.
 
-In my own research, [I previously found similar neurons in other GANs](https://arxiv.org/abs/1811.10597), and I think Wu’s subsequent finding on StyleGAN is the clearest example of single-neuron disentanglement seen to date. For example, when we reproduce Wu's results, we find individual neurons that control complex but very sensible things like whether the lights are turned on or off in a room.
+For example, when we reproduce Wu's results, we find individual neurons that control complex but very sensible things like whether the lights are turned on or off in a room.
 
 ![GAN single-neuron control](/images/gan_neuron_control.gif)
 
