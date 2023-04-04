@@ -68,7 +68,7 @@ Kevin's interpretation of the causal structure within the network is pretty effe
 
 The emergence of reasonable "world models" inside large transformers, despite the reversed direction of tthe arrows, has been observed in several other works that are worth reading about.  Be sure to read the [Othello](https://thegradient.pub/othello/) paper by Kenneth Li, et al., as well as [Neel Nanda's followup](https://www.neelnanda.io/mechanistic-interpretability/othello).  Read the [induction heads](https://arxiv.org/abs/2209.11895) paper by Catherine Olssen, et al., the [Alchemy](https://arxiv.org/abs/2106.00737) paper by Belinda Li, et al., and the [indirect object identification](https://arxiv.org/abs/2211.00593) work by Kevin Wang, et al.  All these works reveal little pieces of a secret:
 
-<center>*Transformer models do not just imitate surface statistics.  They go beyond that, often constructing internal computational mechanisms that mimic causal mechanisms in the real world.*</center>
+<p style="text-align:center">*Transformer models do not just imitate surface statistics.  They go beyond that, often constructing internal computational mechanisms that mimic causal mechanisms in the real world.*</p>
 
 # Beyond the Turing Test
 
