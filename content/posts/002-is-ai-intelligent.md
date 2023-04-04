@@ -41,7 +41,7 @@ For example, when we reproduce Wu's results on a GAN trained to draw bedrooms, w
 
 ![GAN single-neuron control](/images/gan_neuron_control.gif)
 
-So rational graphical models seem to be a promising path for possibly learning reasonable models of the world, or maybe models of cognition.  Unfortunately, GANs and similar architectures have not (yet) been successful at modeling anything as complex as natural language.  That might be because the cognitive processes that lead to language are too intricate for those architectures. For example, humans draw upon an enormous amount of knowledge when thinking about a sentence to utter.
+So rational graphical models seem to be a promising path for possibly learning reasonable models of the world, and maybe even reasonable models of cognition.  Unfortunately, GANs and similar architectures have not (yet) been successful at modeling anything as complex as natural language.  That might be because the cognitive processes that lead to language are too intricate for those architectures. For example, humans draw upon an enormous amount of knowledge when thinking about simple utterance.
 
 # Transformers have the wrong shape but may harbor knowledge
 
@@ -56,11 +56,15 @@ Unfortunately, autoregressive models have the "wrong" top-level structure to dir
 On the other hand, research from my lab by Kevin Meng et al. ([ROME](https://rome.baulab.info))
 suggests that transformers can implement reasonable models of cognition, learning explicit hidden states that carry the information about an understandable unit of meaning in the world.  The graphs end up looking like the picture on the right, with the same structure as a rational model with some arrows reversed.
 
-For example, the plot below shows the effect of swapping individual hidden states between two runs of a GPT model when it predicts the word "basketball."  It is unsurprising that swapping states late in the model, at (b) will cause the model to flip its predictions to "soccer," but the suprising finding is that a small set of states deep within the model, at (a), also cause the model to flip its predictions.  In the ROME paper we find evidence that these early states correspond to the point at which the model retrieves its knowledge about which sport the athlete plays.  For example, if we intercept and modify the parameters of the model the early site (a), we can edit the model's belief and make it think that Shaq plays soccer instead.
+For example, the plot below shows the effect of swapping individual hidden states between two runs of a GPT model, one with a sentence about Shaquille O'Neal, and another about Megan Rapinoe.
+
+Ordinarily the sentence is about Shaq and predicts "basketball."  But if we take a single hidden state from Megan's sentence and move it over, then at some locations (shown in purple), it will cause the model to flip its predictions to "soccer." It is unsurprising that swapping states late in the model, at (b) will cause this effect, but the suprising finding is that a small set of states deep within the model, at (a), also cause the model to flip its predictions.
+
+In the ROME paper we find evidence that these early states correspond to the point at which the model retrieves its knowledge about which sport the athlete plays.  For example, if we intercept and modify the parameters of the model the early site (a), we can edit the model's belief and make it think that Shaq plays soccer instead.
 
 ![Switching Shaq to a soccer player](/images/rome_rapinoe_shaq.png)
 
-Interestingly, Kevin's interpretation of the structure of the network is pretty effective.  In his [MEMIT paper](https://memit.baulab.info/), he finds that he can use his understanding of the strcuture to directly editing transformer memories at scale, providing several orders-of-magnitude better control over transformer memories than traditional fine-tuning methods.
+Kevin's interpretation of the causal structure within the network is pretty effective.  In his [MEMIT paper](https://memit.baulab.info/), he finds that he can use his understanding of the strcuture to directly editing transformer memories at scale, providing several orders-of-magnitude better control over transformer memories than traditional fine-tuning methods.
 
 The emergence of reasonable "world models" inside large transformers, despite arrows going the wrong way, has been observed in several other works that are woth reading about.  Be sure to read the [Othello](https://thegradient.pub/othello/) paper by Kenneth Li, et al., as well as [Neel Nanda's followup](https://www.neelnanda.io/mechanistic-interpretability/othello).  Read the [induction heads](https://arxiv.org/abs/2209.11895) paper by Catherine Olssen, et al., the [Alchemy](https://arxiv.org/abs/2106.00737) paper by Belinda Li, et al., and the [indirect object identification](https://arxiv.org/abs/2211.00593) work by Kevin Wang, et al.  All these works reveal little pieces of a secret: transformer models do not just imitate surface statistics.  They go beyond that, often constructing internal computational mechanisms that mimic causal mechanisms in the real world.
 
