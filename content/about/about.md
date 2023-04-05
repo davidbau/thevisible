@@ -1,6 +1,6 @@
 ---
 title: "About"
-date: 2023-03-30T05:35:26-04:00
+date: 2023-02-28T05:35:26-04:00
 ---
 
 The Visible Net is a blogging outlet for the “Academic Contingent” of mechanistic interpretability machine intelligence researchers, as well as an incubation space for the proposed National Deep Inference Facility. It is a shared blogging space for students, collaborators, and others working on mechanistic interpretability.
