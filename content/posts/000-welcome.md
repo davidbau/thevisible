@@ -2,7 +2,7 @@
 title: "Welcome"
 date: 2023-03-19T15:54:00-04:00
 authors: [David Bau]
-summary: Welcome to The Visible Net, a blogging outlet for the “East-Coast Contingent” of mechanistic interpretability machine intelligence researchers, as well as an incubation space for the proposed National Deep Inference Facility.  And some introductions, from David Bau.
+summary: Welcome to The Visible Net, a blogging outlet for the “Academic Contingent” of mechanistic interpretability machine intelligence researchers, as well as an incubation space for the proposed National Deep Inference Facility.  And some introductions, from David Bau.
 ---
 Welcome to The Visible Net, a blogging outlet for the “Academic Contingent” of mechanistic interpretability machine intelligence researchers, as well as an incubation space for the proposed National Deep Inference Facility.
 
