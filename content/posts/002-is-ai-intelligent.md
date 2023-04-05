@@ -89,7 +89,9 @@ We are in early days, and this new research program is very immature.  We do not
 
 # Footnotes and responses
 
-After I posted the above, Yonatan Belinkov responded with the following comments and caveats, with many links and thoughts worth reading.
+After posting the above, I received the following throughtful responses.
+
+[Yonatan Belinkov](https://t3.technion.ac.il/researcher/belinkov-yonatan/) writes:
 
  1. Next word prediction may appear irrational, but we should remember that it is a way to get the probability of any body of text via the chain rule. [Ryan Cotterell recently made a comment on twitter](https://twitter.com/ryandcotterell/status/1643306052203470848?s=20) reminding us that p(text) is a very strong thing. In a sense, maybe p(text) is all we care about, and next word prediction is just one way to get that p. It is also interesting to think about whether the autoregressive factorization is the preferred way for some reason.
  2. We must acknowledge that ChatGPT and similar models do more than next word prediction. First, their pre-training data sets are not just ordinary natural language. They are trained on code, and that gives them possibly external semantics via assertions.  See [this theoretical paper in TACL by William Merrill et al.](https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00412/107385/Provable-Limitations-of-Acquiring-Meaning-from). Second, these models are fine-tuned on instruction data sets. Third, reinforcement learning from human feedback (RLHF) is applied.
