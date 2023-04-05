@@ -23,7 +23,7 @@ To appreciate what Spark-Jones found to be missing in the traditional language m
 
 ![Simple graphical model incorporating meaning](/images/graph_meaning1.png)
 
-Spark-Jones drew graphs like this to indicate what we are really after. Here the “m” denotes the underlying meaning that exists within your mind, causing you to utter the words "Shaquille O'Neal plays basketball." This model is more plausible, because it is not words that generate other words, rather, it is our thoughts and intentions and desires that cause words to be spoken.
+Spark-Jones drew graphs like this to indicate what we are really after. Here the “m” denotes the underlying meaning that exists within your mind, causing you to utter the words "Shaquille O'Neal plays basketball." This model is more plausible, because it is not words that generate other words, rather, it is our thoughts, knowledge, intentions and *desire for expression* that cause words to be spoken.
 
 # GANs have the right shape but cannot do language
 
@@ -47,7 +47,7 @@ So rational graphical models seem to be a promising path for possibly learning r
 
 Consider the sentence "Shaquille O'Neal plays basketball." Although the words “soccer” or “tennis” are often reasonable alternatives to the word “basketball,” when talking about Shaq playing basketball, other sports cannot be substituted in that particular sentence.
 
-This is because the sentence is not just making a grammatically correct statement.  The sentence reflects a humanlike thinking process: it reflects our knowledge about Shaq. We would only say “soccer” if we meant the sport of a soccer player like Megan Rapinoe, or if---for some reason---we held (or pretended to hold the mistaken belief that Shaq played soccer. A decomposition of the individual ideas within our mind might be diagrammed like the figure on the left.
+This is because the sentence is not just making a grammatically correct statement.  The sentence reflects a humanlike thinking process: it reflects our knowledge about Shaq. We would only say “soccer” if we meant the sport of a soccer player like Megan Rapinoe, or if---for some reason---we held or pretended to hold the mistaken belief that Shaq played soccer. A decomposition of the individual ideas within our mind might be diagrammed like the figure on the left.
 
 ![Simple graphical model decomposing knowledge](/images/graph_side_by_side.png)
 

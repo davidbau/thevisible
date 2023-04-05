@@ -124,7 +124,7 @@
     },
     "datePublished": "2023-04-02",
     "description": "",
-    "wordCount":  1888 ,
+    "wordCount":  1890 ,
     "mainEntityOfPage": "True",
     "dateModified": "2023-04-02",
     "image": {
@@ -339,7 +339,7 @@
 <p>Yet, somehow, though <a href="https://chat.openai.com/">ChatGPT</a> works the same way, it seems more profound.  What is the difference?  Is ChatGPT the same as Jabberwaacky; separated only by scale, a few years of Moore&rsquo;s law, a big budget, and slightly better programming?  Or if they are substantively different, what is the fundamental difference?  What line has been crossed?</p>
 <p>To appreciate what Spark-Jones found to be missing in the traditional language modeling view, contrast the diagram above to the following graph that provides a more rational model for the cognitive process of language.</p>
 <p><img src="/images/graph_meaning1.png" alt="Simple graphical model incorporating meaning"></p>
-<p>Spark-Jones drew graphs like this to indicate what we are really after. Here the “m” denotes the underlying meaning that exists within your mind, causing you to utter the words &ldquo;Shaquille O&rsquo;Neal plays basketball.&rdquo; This model is more plausible, because it is not words that generate other words, rather, it is our thoughts and intentions and desires that cause words to be spoken.</p>
+<p>Spark-Jones drew graphs like this to indicate what we are really after. Here the “m” denotes the underlying meaning that exists within your mind, causing you to utter the words &ldquo;Shaquille O&rsquo;Neal plays basketball.&rdquo; This model is more plausible, because it is not words that generate other words, rather, it is our thoughts, knowledge, intentions and <em>desire for expression</em> that cause words to be spoken.</p>
 <h1 id="gans-have-the-right-shape-but-cannot-do-language">GANs have the right shape but cannot do language</h1>
 <p>Before you object that such an imaginative abstraction is unrelated to practical considerations in the field of artificial neural networks, keep in mind that it is common to create neural architectures with an explicit state vector that plays the role of m.  For example, contrast <a href="https://arxiv.org/abs/1606.05328">Pixel-CNN networks</a>, which model an image by predicting each pixel as a consequence of previously-seen pixels above and to the left, with <a href="https://arxiv.org/abs/1406.2661">generative adversarial networks (GANs)</a>, which use an explicit representation stored in a small hidden state z that predicts all the pixels, with no upstream dependencies.</p>
 <p>Both architectures are able to synthesize realistic-looking images of the world. However, it seems very unlikely that the Pixel-CNN architecture would contain any sensible representation of the world, because <em>nobody believes that pixels cause other pixels.</em></p>
@@ -351,7 +351,7 @@
 <p>So rational graphical models seem to be a promising path for possibly learning reasonable models of the world, maybe even reasonable models of cognition.  Unfortunately, GANs and similar architectures have not (yet) been successful at modeling anything as complex as natural language.  That might be because the cognitive processes that lead to language are too intricate for these architectures. Ultimately, humans draw upon an enormous amount of knowledge just to conjure up a simple utterance.</p>
 <h1 id="transformers-have-the-wrong-shape-but-may-harbor-knowledge">Transformers have the wrong shape but may harbor knowledge</h1>
 <p>Consider the sentence &ldquo;Shaquille O&rsquo;Neal plays basketball.&rdquo; Although the words “soccer” or “tennis” are often reasonable alternatives to the word “basketball,” when talking about Shaq playing basketball, other sports cannot be substituted in that particular sentence.</p>
-<p>This is because the sentence is not just making a grammatically correct statement.  The sentence reflects a humanlike thinking process: it reflects our knowledge about Shaq. We would only say “soccer” if we meant the sport of a soccer player like Megan Rapinoe, or if&mdash;for some reason&mdash;we held (or pretended to hold the mistaken belief that Shaq played soccer. A decomposition of the individual ideas within our mind might be diagrammed like the figure on the left.</p>
+<p>This is because the sentence is not just making a grammatically correct statement.  The sentence reflects a humanlike thinking process: it reflects our knowledge about Shaq. We would only say “soccer” if we meant the sport of a soccer player like Megan Rapinoe, or if&mdash;for some reason&mdash;we held or pretended to hold the mistaken belief that Shaq played soccer. A decomposition of the individual ideas within our mind might be diagrammed like the figure on the left.</p>
 <p><img src="/images/graph_side_by_side.png" alt="Simple graphical model decomposing knowledge"></p>
 <p>Unfortunately, autoregressive models have the &ldquo;wrong&rdquo; top-level structure to directly implement the model on the left: in an autoregressive transformer, preceding words are inputs rather than outputs.</p>
 <p>On the other hand, research from my lab by Kevin Meng et al. (<a href="https://rome.baulab.info">ROME</a>)
