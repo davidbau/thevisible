@@ -1,7 +1,7 @@
 ---
 title: "Is Artificial Intelligence Intelligent?"
 date: 2023-04-02T17:30:38-04:00
-draft: false
+authors: [David Bau]
 ---
 The idea that large language models could be capable of cognition is not obvious. Neural language modeling has been around since [Jeff Elman’s 1990 structure-in-time work](https://papers.baulab.info/Elman-1990.pdf), but 33 years passed between that initial idea and [first contact with ChatGPT](https://papers.baulab.info/also/Bubek-2023.pdf).
 

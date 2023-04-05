@@ -1,7 +1,7 @@
 ---
 title: "Catching Up"
 date: 2023-03-26T14:36:12-04:00
-author: David Bau
+authors: [David Bau]
 summary: Today, I received an email from an old college friend who asked about GPT models, RLHF, AI safety, and the new ChatGPT plug-in model.  A lot has been happening in the past few years, so here is a bit of a crash course on the current state of the large language model world, and what concerns me about it.
 ---
 
