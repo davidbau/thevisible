@@ -89,6 +89,9 @@ We are in early days, and this new research program is very immature.  We do not
 
 # Footnotes and responses
 
+Some other things worth reading that are related to the ideas here: [Ferenc Huszár wrote a very interesting contemplation of other reasons he missed the promise of LLMs](https://www.inference.vc/we-may-be-surprised-again/), including the No Free Lunch theorem, and his own reasoning about the futility of maximizing p(data).  On the optimistic side, [Jacob Andreas's Language Models as Agent Models paper](https://arxiv.org/abs/2212.01681) hypothesizes that LM can model intention because they are models of the communicative intent of writers.  [Michael Jordan has a different take, arguing that the Turing test is no longer interesting](https://medium.com/@mijordan3/artificial-intelligence-the-revolution-hasnt-happened-yet-5e1d5812e1e7) because we should be setting our sights higher than mere imitation of humans!
+
+
 After posting the above, I received the following throughtful responses.
 
 [Yonatan Belinkov](https://t3.technion.ac.il/researcher/belinkov-yonatan/) writes:
