@@ -9,7 +9,8 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
     brand = "The Visible Net"                      # name of your site - appears in the sidebar
     author = 'David Bau and contributors'
 
-    # brand_image = "/images/test.jpg"    # path to the image shown in the sidebar
+    brand_image = "/images/side_bulb.jpg"    # path to the image shown in the sidebar
+    og_image = "/images/side_bulb.jpg"
     description = "Dissecting the mechanisms of machine intelligence"
     dark_mode = false                     # optional - defaults to false
 
