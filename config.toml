@@ -38,15 +38,15 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
     # facebook_url = "https://facebook.com"
 
     # Hex colors for your sidebar.
-    sidebar_bg_color = "#00D8F5"            # default is #202020
+    sidebar_bg_color = "#EEE"               # default is #202020
     sidebar_img_border_color = "#000"       # default is #515151
     sidebar_p_color = "#000"                # default is #909090
     sidebar_h1_color = "#000"               # default is #FFF
     sidebar_h2_color = "#222"               # default is #FFF
     sidebar_a_color = "#000"                # default is #FFF
     sidebar_socials_color = "#000"          # default is #FFF
-    moon_sun_color = "#00D8F5"              # default is #FFF
-    moon_sun_background_color = "#111"      # default is #515151
+    moon_sun_color = "#CCC"                 # default is #FFF
+    moon_sun_background_color = "#EEE"      # default is #515151
 
     # Hex colors for your content in light mode.
     text_color = "#222"             # default is #222
