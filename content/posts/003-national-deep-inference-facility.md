@@ -10,7 +10,7 @@ In October 2022, the White House Office of Science and Technology Policy release
 Meanwhile, LLMs such as ChatGPT are being adopted more quickly than any previous technology, with [widespread deployment in consumer-facing technologies](https://www.nytimes.com/2023/02/16/technology/bingchatbot-microsoft-chatgpt.html), touching every
 field involving reading, writing, or programming, [even as its mechanisms remain unexplained](https://www.sciencedirect.com/science/article/pii/S0268401223000233).  Because we do not understand how LLMs make their predictions, we find ourselves in a situation where the most impactful class of AI model today is inscrutable: the opacity of LLMs has become a foundational challenge to our national goal of developing trustworthy AI.
 
-[Senator Schumer spoke at CSIS to introduce the SAFE Innovation Framework](https://www.csis.org/events/sen-chuck-schumer-launches-safe-innovation-ai-age-csis), he summarized the challenge posed by large-scale deployments of black-box systems:
+When [Senator Schumer spoke at CSIS to introduce the SAFE Innovation Framework](https://www.csis.org/events/sen-chuck-schumer-launches-safe-innovation-ai-age-csis), he summarized the challenge posed by large-scale deployments of black-box systems:
 
 > Explainability is about transparency. When you ask an AI system a question and it gives you an answer—perhaps an answer you weren’t expecting—you want to know where that answer came from.  You should be able to ask “why did AI choose this answer, over some other answer that could have also been a possibility?” And it should be done in a simple way, so all users can understand how these systems come up with answers.
 >
