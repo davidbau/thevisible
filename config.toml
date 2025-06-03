@@ -12,7 +12,7 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
     brand_image = "/images/side_bulb_square.jpg"    # path to the image shown in the sidebar
     og_image = "/images/side_bulb.jpg"
     gtm_id = "G-FD12LWN557"
-    description = "Dissecting the mechanisms of machine intelligence"
+    description = "Science, Society and Understanding AI"
     dark_mode = false                     # optional - defaults to false
 
     # MENU PLACEHOLDER
