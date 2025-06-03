@@ -3,7 +3,7 @@ title: "Strengthening STEM in America"
 date: 2025-06-01T17:30:38-04:00
 authors: [David Bau]
 ---
-# Dear MAGA friends and all Americans,
+*Dear MAGA friends and all Americans,*
 
 I have been worrying about STEM in the US a lot, because right now the Senate is writing new laws that cut 75% of the STEM budget in the US.
 
