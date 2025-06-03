@@ -5,7 +5,7 @@ authors: [David Bau]
 ---
 *For background on why these cuts are happening and what we can do about it, [read the full story here](https://thevisible.net/posts/004-strengthening-stem-in-america/).*
 
-## Take Action Now: Contact Your Senator
+## How to Contact Your Senator
 
 **The Senate is making these budget decisions RIGHT NOW.** If you live in one of these states, your senator needs to hear from you immediately. Click on your senator's name to send them a message asking them to redirect STEM funding to serve ALL Americans rather than cutting it entirely:
 
