@@ -127,7 +127,7 @@ These programs already have the infrastructure, the industry partnerships, and t
 
 Every state has critical workforce needs these programs were addressing. In the global competition for STEM talent, we cannot afford to dismantle our education infrastructure. These senators have the power to redirect these programs to serve all their constituents while preserving American competitiveness.
 
-## The Most Heartbreaking Cuts: Programs That Would Help Everyone
+## The Most Damaging Cuts: Programs That Would Help Everyone
 
 Across all states, we're seeing the termination of programs that address our most pressing challenges:
 
