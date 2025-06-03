@@ -31,7 +31,7 @@ For example 85% of all fundamental physics research has been cut. You cannot cut
 
 So that is how we got to making this mistake.
 
-## (2) The second thing to understand is how BAD this mistake is.
+## (2) Second thing to understand is how BAD this mistake is.
 
 By making the cuts permanent and losing everybody, instead of just changing the priorities for the professors, we end up permanently shrinking not just the NSF and NIH but all science in the US.
 
