@@ -1,9 +1,8 @@
 ---
-title: "American STEM Investments to Redirect Instead of Cancel"
+title: "American STEM Investments to Redirect"
 date: 2025-06-03T06:30:00-04:00
 authors: [David Bau]
 ---
-
 *For background on why these cuts are happening and what we can do about it, [read the full story here](https://thevisible.net/posts/004-strengthening-stem-in-america/).*
 
 ## Take Action Now: Contact Your Senator
