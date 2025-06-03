@@ -67,4 +67,4 @@ Even a simple message saying "Don't cut STEM - redirect it to serve everyone" wo
 
 ---
 
-*If you live in ME, KS, WV, IN, LA, MS, TX, ID, NC, AK, TN, MT, ND, AL, NE, or SC, your senator has significant influence over science funding. Please contact them - [see specific examples of terminated STEM programs in your state that could have been redirected rather than cut, plus direct links in this document to reach your senator](https://thevisible.net/005-american-stem-projects/).*
+*If you live in ME, KS, WV, IN, LA, MS, TX, ID, NC, AK, TN, MT, ND, AL, NE, or SC, your senator has significant influence over science funding. Please contact them - [see specific examples of terminated STEM programs in your state that could have been redirected rather than cut, plus direct links in this document to reach your senator](https://thevisible.net/posts/005-american-stem-projects/).*

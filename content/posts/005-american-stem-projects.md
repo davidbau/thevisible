@@ -87,6 +87,24 @@ In **Idaho**, we've cut Grant #2200838 - a $2.8 million program with the Coeur d
 
 We've also terminated Grant #2406787 - a $1.16 million engineering retention program at Boise State. Idaho desperately needs engineers for its growing semiconductor industry. Why cut programs that help students succeed in engineering? Redirect them to help ALL Idaho engineering students graduate and stay in-state.
 
+## For Senator Katie Britt (R-AL)
+
+In **Alabama**, we've terminated Grant #1712692 - a $5 million Louis Stokes Alliance connecting Alabama's universities to create STEM pathways. This network included Auburn, University of Alabama, and historically black colleges working together to build Alabama's STEM workforce. The program created research opportunities and industry connections that ANY Alabama student could benefit from.
+
+We've also cut Grant #2106583 - a $2.25 million INSPIRE program at Alabama A&M providing research incentives and STEM education. Alabama needs engineers for its growing aerospace and automotive industries. Why eliminate programs that create this workforce? Just remove the diversity requirements and train ALL Alabamians for these high-paying jobs.
+
+## For Senator Deb Fischer (R-NE) 
+
+In **Nebraska**, beyond the $2 million Indigenous agricultural technology program (#2415667), we've terminated Grant #2201486 - a $1.5 million program transforming undergraduate mathematics education. Nebraska's insurance and financial sectors need mathematically trained workers. This program was modernizing how math is taught to make it more relevant and engaging. ALL Nebraska students deserve better math education.
+
+We've also cut Grant #2408749 - a $1.2 million Nebraska Engineering Inclusive Excellence Center. This was training "complete engineers" with both technical skills and the ability to work in diverse teams - exactly what Nebraska's growing tech sector needs. Every engineering student benefits from learning teamwork and communication skills. Redirect it to serve ALL future engineers.
+
+## For Senator Tim Scott (R-SC)
+
+In **South Carolina**, we've terminated Grant #2329538 - a $1.25 million postdoctoral mentoring program that was training the next generation of STEM educators. South Carolina's booming manufacturing and technology sectors need qualified STEM teachers to prepare the workforce. This program trained postdocs to be better teachers and mentors. ALL South Carolina students deserve well-trained STEM teachers.
+
+We've also cut Grant #2214740 - a $1.92 million after-school STEM program using storytelling to build science identity in youth. This innovative approach made STEM accessible and exciting for kids who might not see themselves as "science types." In a state trying to attract tech companies and advanced manufacturing, we need ALL children excited about STEM careers, not fewer.
+
 ## For Senators from Other Key States
 
 In **North Carolina**, we've cut Grant #2326731 - a $4.14 million geoscience transformation program and Grant #2207361 - a $3.35 million Mountains-to-Sea STEM Alliance. The Research Triangle needs this talent pipeline. Broaden access to ALL North Carolina students.
@@ -123,22 +141,3 @@ Across all states, we're seeing the termination of programs that address our mos
 
 The tragedy is that none of these programs were inherently ideological. They were addressing real workforce needs, real health crises, and real economic challenges. They just happened to include language about serving underrepresented groups. The fix is simple: keep the programs, broaden the eligibility.
 
-## Additional State Examples
-
-### For Senator Katie Britt (R-AL)
-
-In **Alabama**, we've terminated Grant #1712692 - a $5 million Louis Stokes Alliance connecting Alabama's universities to create STEM pathways. This network included Auburn, University of Alabama, and historically black colleges working together to build Alabama's STEM workforce. The program created research opportunities and industry connections that ANY Alabama student could benefit from.
-
-We've also cut Grant #2106583 - a $2.25 million INSPIRE program at Alabama A&M providing research incentives and STEM education. Alabama needs engineers for its growing aerospace and automotive industries. Why eliminate programs that create this workforce? Just remove the diversity requirements and train ALL Alabamians for these high-paying jobs.
-
-### For Senator Deb Fischer (R-NE) 
-
-In **Nebraska**, beyond the $2 million Indigenous agricultural technology program (#2415667), we've terminated Grant #2201486 - a $1.5 million program transforming undergraduate mathematics education. Nebraska's insurance and financial sectors need mathematically trained workers. This program was modernizing how math is taught to make it more relevant and engaging. ALL Nebraska students deserve better math education.
-
-We've also cut Grant #2408749 - a $1.2 million Nebraska Engineering Inclusive Excellence Center. This was training "complete engineers" with both technical skills and the ability to work in diverse teams - exactly what Nebraska's growing tech sector needs. Every engineering student benefits from learning teamwork and communication skills. Redirect it to serve ALL future engineers.
-
-### For Senator Tim Scott (R-SC)
-
-In **South Carolina**, we've terminated Grant #2329538 - a $1.25 million postdoctoral mentoring program that was training the next generation of STEM educators. South Carolina's booming manufacturing and technology sectors need qualified STEM teachers to prepare the workforce. This program trained postdocs to be better teachers and mentors. ALL South Carolina students deserve well-trained STEM teachers.
-
-We've also cut Grant #2214740 - a $1.92 million after-school STEM program using storytelling to build science identity in youth. This innovative approach made STEM accessible and exciting for kids who might not see themselves as "science types." In a state trying to attract tech companies and advanced manufacturing, we need ALL children excited about STEM careers, not fewer.
